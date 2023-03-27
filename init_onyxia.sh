@@ -19,6 +19,7 @@ python -m pip install -r $REQUIREMENTS_FILE
 cd $LLAMA_DIR & python -m pip install -e .
 
 mc cp $TOKENIZER_PATH $WORK_DIR
+mkdir 7B
 mc cp $MODEL_7_PATH ${WORK_DIR}/7B
 
 # the last line is for onyxia
