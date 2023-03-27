@@ -23,3 +23,4 @@ mc cp $MODEL_7_PATH ${WORK_DIR}/7B
 
 # the last line is for onyxia
 sudo chown ${SESSION} -R /home/${SESSION}/ # Otherwise onyxia user has no rights on the local repo folder.
+chmod +777 ${CLONE_DIR}/run_example.sh
