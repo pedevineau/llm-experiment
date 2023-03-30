@@ -18,9 +18,9 @@ REQUIREMENTS_FILE=${CLONE_DIR}/requirements.txt
 python -m pip install -r $REQUIREMENTS_FILE
 cd $LLAMA_DIR & python -m pip install -e .
 
-mc cp $TOKENIZER_PATH $WORK_DIR
-mkdir ${WORK_DIR}/7B
-mc cp --r $MODEL_7_PATH ${WORK_DIR}/7B
+mc cp $TOKENIZER_PATH /home/${SESSION}
+# mkdir ${WORK_DIR}/7B
+mc cp --r $MODEL_7_PATH $/home/${SESSION}
 
 # the last line is for onyxia
 sudo chown ${SESSION} -R /home/${SESSION}/ # Otherwise onyxia user has no rights on the local repo folder.
