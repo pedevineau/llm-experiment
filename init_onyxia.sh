@@ -20,7 +20,7 @@ cd $LLAMA_DIR & python -m pip install -e .
 
 mc cp $TOKENIZER_PATH /home/${SESSION}
 # mkdir ${WORK_DIR}/7B
-mc cp --r $MODEL_7_PATH $/home/${SESSION}
+mc cp --r $MODEL_7_PATH /home/${SESSION}
 
 # the last line is for onyxia
 sudo chown ${SESSION} -R /home/${SESSION}/ # Otherwise onyxia user has no rights on the local repo folder.
